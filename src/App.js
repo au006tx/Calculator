@@ -5,6 +5,7 @@ import './App.css';
 import TarzanCalculator from './components/tarzancalc';
 import Cart from './components/cart';
 import SimpleCalculator from './components/simplecalc';
+import Sudoko from './components/sudoko';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -15,10 +16,13 @@ class App extends React.Component {
 
   render() {
     return(
-      <div style={{display:'block', float:'left', marginTop:'50px', padding:'20px', borderRadius:'15px', backgroundColor:'#9994d6', marginLeft:'100px'}}>
-        {/* <Cart product='Iphone' quantity={1} price={50000} /> */}
-        {/* <TarzanCalculator /> */}
-        <SimpleCalculator inputValue={0}/>
+      <div>
+        <h1 style={{display:'flex', justifyContent:'center'}}>Sudoko Game </h1>
+        <div style={{display:'flex', justifyContent:'center'}}>
+        <Sudoko />
+
+        </div>
+        
       </div>
 
     )
